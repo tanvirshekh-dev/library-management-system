@@ -9,7 +9,6 @@ export function MainLayout() {
       <div className="flex flex-col flex-1">
         <Header />
         <main className="flex-1 overflow-y-auto bg-slate-50">
-          {/* This is where your pages will appear */}
           <Outlet />
         </main>
       </div>

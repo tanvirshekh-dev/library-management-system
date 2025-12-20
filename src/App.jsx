@@ -9,13 +9,6 @@ import StudentManagement from "./pages/StudentManagement";
 import Profile from "./pages/Profile";
 
 
-// Placeholder components 
-// const Books = () => <div className="p-8">Book Management Content</div>;
-// const IssueReturn = () => <div className="p-8">Issue and return</div>;
-// const Students = () => <div className="p-8">Student Management Content</div>;
-// const Profile = () => <div className="p-8">User Profile Content</div>;
-// const Categories = () => <div className="p-8">Categories</div>;
-
 const router = createBrowserRouter([
   {
     path: "/",

@@ -36,7 +36,7 @@ export function Sidebar() {
 
   return (
     <aside className="w-64 bg-white border-r border-gray-200 flex flex-col h-screen shrink-0">
-      {/* Logo Area */}
+      {/* Logo  */}
       <div className="p-6 flex justify-center border-b border-gray-50">
         <div className="w-24 h-24">
           <img
@@ -47,7 +47,7 @@ export function Sidebar() {
         </div>
       </div>
 
-      {/* Navigation Area */}
+      {/* Navigation  */}
       <div className="flex-1 overflow-y-auto p-4">
         <div className="space-y-2">
           {menuItems.map((item, index) => {
@@ -112,7 +112,7 @@ export function Sidebar() {
                   flex items-center gap-3 p-3 rounded-lg font-medium transition-all
                   ${
                     isActive
-                      ? "text-[#003f5c] bg-slate-50"
+                      ? "text-white bg-[#00455d]"
                       : "text-slate-600 hover:bg-slate-50"
                   }
                 `}
