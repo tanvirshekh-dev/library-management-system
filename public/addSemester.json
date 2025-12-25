@@ -1,0 +1,42 @@
+[
+  { 
+    "id": 1, 
+    "name": "First Semester", 
+    "shortName": "1st" 
+},
+  { 
+    "id": 2, 
+    "name": "Second Semester", 
+    "shortName": "2nd" 
+},
+  { 
+    "id": 3, 
+    "name": "Third Semester", 
+    "shortName": "3rd" 
+},
+  { 
+    "id": 4, 
+    "name": "Fourth Semester", 
+    "shortName": "4th" 
+},
+  { 
+    "id": 5, 
+    "name": "Fifth Semester", 
+    "shortName": "5th" 
+},
+  { 
+    "id": 6, 
+    "name": "Sixth Semester", 
+    "shortName": "6th" 
+},
+  { 
+    "id": 7, 
+    "name": "Seventh Semester", 
+    "shortName": "7th" 
+},
+  { 
+    "id": 8, 
+    "name": "Eighth Semester", 
+    "shortName": "8th" 
+}
+]

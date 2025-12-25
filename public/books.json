@@ -1,0 +1,386 @@
+[
+  {
+    "id": 1,
+    "title": "Physics -II",
+    "code": "28545",
+    "copies": 100,
+    "dept": "CST",
+    "semester": "7th"
+  },
+  {
+    "id": 2,
+    "title": "Python Programming",
+    "code": "28545",
+    "copies": 150,
+    "dept": "CST",
+    "semester": "6th"
+  },
+  {
+    "id": 3,
+    "title": "Graphics Design-I",
+    "code": "28545",
+    "copies": 48,
+    "dept": "ET",
+    "semester": "5th"
+  },
+  {
+    "id": 4,
+    "title": "Mathematics-III",
+    "code": "28545",
+    "copies": 264,
+    "dept": "ENT",
+    "semester": "3rd"
+  },
+  {
+    "id": 5,
+    "title": "IT Support Services",
+    "code": "28545",
+    "copies": 78,
+    "dept": "RAC",
+    "semester": "4th"
+  },
+  {
+    "id": 6,
+    "title": "Digital Electronics-I",
+    "code": "28545",
+    "copies": 89,
+    "dept": "EMT",
+    "semester": "1st"
+  },
+  {
+    "id": 7,
+    "title": "Java Programming",
+    "code": "28545",
+    "copies": 45,
+    "dept": "CT",
+    "semester": "2nd"
+  },
+  {
+    "id": 8,
+    "title": "Data Communication",
+    "code": "28545",
+    "copies": 200,
+    "dept": "CST",
+    "semester": "3rd"
+  },
+  {
+    "id": 9,
+    "title": "Computer Networking",
+    "code": "28545",
+    "copies": 98,
+    "dept": "CST",
+    "semester": "5th"
+  },
+  {
+    "id": 10,
+    "title": "Cyber Security & Ethics",
+    "code": "28545",
+    "copies": 65,
+    "dept": "CST",
+    "semester": "7th"
+  },
+  {
+    "id": 11,
+    "title": "Operating System",
+    "code": "28546",
+    "copies": 120,
+    "dept": "CST",
+    "semester": "4th"
+  },
+  {
+    "id": 12,
+    "title": "Database Management",
+    "code": "28547",
+    "copies": 85,
+    "dept": "CST",
+    "semester": "5th"
+  },
+  {
+    "id": 13,
+    "title": "C Programming",
+    "code": "28548",
+    "copies": 300,
+    "dept": "CT",
+    "semester": "1st"
+  },
+  {
+    "id": 14,
+    "title": "Web Development-I",
+    "code": "28549",
+    "copies": 110,
+    "dept": "CST",
+    "semester": "6th"
+  },
+  {
+    "id": 15,
+    "title": "Software Engineering",
+    "code": "28550",
+    "copies": 55,
+    "dept": "CST",
+    "semester": "7th"
+  },
+  {
+    "id": 16,
+    "title": "Microprocessor",
+    "code": "28551",
+    "copies": 40,
+    "dept": "EMT",
+    "semester": "4th"
+  },
+  {
+    "id": 17,
+    "title": "Electrical Circuits",
+    "code": "28552",
+    "copies": 95,
+    "dept": "ET",
+    "semester": "2nd"
+  },
+  {
+    "id": 18,
+    "title": "Communication Engineering",
+    "code": "28553",
+    "copies": 70,
+    "dept": "ENT",
+    "semester": "5th"
+  },
+  {
+    "id": 19,
+    "title": "Data Structure",
+    "code": "28554",
+    "copies": 140,
+    "dept": "CST",
+    "semester": "3rd"
+  },
+  {
+    "id": 20,
+    "title": "Algorithms",
+    "code": "28555",
+    "copies": 60,
+    "dept": "CST",
+    "semester": "4th"
+  },
+  {
+    "id": 21,
+    "title": "Object Oriented Programming",
+    "code": "28556",
+    "copies": 180,
+    "dept": "CT",
+    "semester": "3rd"
+  },
+  {
+    "id": 22,
+    "title": "Basic Electronics",
+    "code": "28557",
+    "copies": 250,
+    "dept": "EMT",
+    "semester": "1st"
+  },
+  {
+    "id": 23,
+    "title": "Digital Logic Design",
+    "code": "28558",
+    "copies": 88,
+    "dept": "CST",
+    "semester": "2nd"
+  },
+  {
+    "id": 24,
+    "title": "Mobile App Development",
+    "code": "28559",
+    "copies": 35,
+    "dept": "CST",
+    "semester": "8th"
+  },
+  {
+    "id": 25,
+    "title": "Cloud Computing",
+    "code": "28560",
+    "copies": 25,
+    "dept": "CST",
+    "semester": "8th"
+  },
+  {
+    "id": 26,
+    "title": "Machine Learning Intro",
+    "code": "28561",
+    "copies": 42,
+    "dept": "CST",
+    "semester": "7th"
+  },
+  {
+    "id": 27,
+    "title": "Network Security",
+    "code": "28562",
+    "copies": 50,
+    "dept": "CST",
+    "semester": "6th"
+  },
+  {
+    "id": 28,
+    "title": "AutoCAD Basics",
+    "code": "28563",
+    "copies": 30,
+    "dept": "ET",
+    "semester": "3rd"
+  },
+  {
+    "id": 29,
+    "title": "Environmental Science",
+    "code": "28564",
+    "copies": 150,
+    "dept": "RS",
+    "semester": "1st"
+  },
+  {
+    "id": 30,
+    "title": "Accounting Principle",
+    "code": "28565",
+    "copies": 65,
+    "dept": "RAC",
+    "semester": "4th"
+  },
+  {
+    "id": 31,
+    "title": "Industrial Management",
+    "code": "28566",
+    "copies": 50,
+    "dept": "CST",
+    "semester": "8th"
+  },
+  {
+    "id": 32,
+    "title": "Technical Report Writing",
+    "code": "28567",
+    "copies": 90,
+    "dept": "CST",
+    "semester": "7th"
+  },
+  {
+    "id": 33,
+    "title": "Power System",
+    "code": "28568",
+    "copies": 45,
+    "dept": "ET",
+    "semester": "6th"
+  },
+  {
+    "id": 34,
+    "title": "Control System",
+    "code": "28569",
+    "copies": 38,
+    "dept": "EMT",
+    "semester": "5th"
+  },
+  {
+    "id": 35,
+    "title": "Multimedia & Graphics",
+    "code": "28570",
+    "copies": 75,
+    "dept": "CST",
+    "semester": "4th"
+  },
+  {
+    "id": 36,
+    "title": "Distributed Systems",
+    "code": "28571",
+    "copies": 30,
+    "dept": "CST",
+    "semester": "8th"
+  },
+  {
+    "id": 37,
+    "title": "Project Management",
+    "code": "28572",
+    "copies": 40,
+    "dept": "ENT",
+    "semester": "7th"
+  },
+  {
+    "id": 38,
+    "title": "VHDL Programming",
+    "code": "28573",
+    "copies": 20,
+    "dept": "EMT",
+    "semester": "6th"
+  },
+  {
+    "id": 39,
+    "title": "Wireless Communication",
+    "code": "28574",
+    "copies": 55,
+    "dept": "ENT",
+    "semester": "8th"
+  },
+  {
+    "id": 40,
+    "title": "Embedded Systems",
+    "code": "28575",
+    "copies": 33,
+    "dept": "CST",
+    "semester": "7th"
+  },
+  {
+    "id": 41,
+    "title": "Sociology",
+    "code": "28576",
+    "copies": 110,
+    "dept": "RS",
+    "semester": "2nd"
+  },
+  {
+    "id": 42,
+    "title": "Entrepreneurship",
+    "code": "28577",
+    "copies": 65,
+    "dept": "CST",
+    "semester": "8th"
+  },
+  {
+    "id": 43,
+    "title": "Artificial Intelligence",
+    "code": "28578",
+    "copies": 40,
+    "dept": "CST",
+    "semester": "8th"
+  },
+  {
+    "id": 44,
+    "title": "Robotics Engineering",
+    "code": "28579",
+    "copies": 15,
+    "dept": "EMT",
+    "semester": "7th"
+  },
+  {
+    "id": 45,
+    "title": "Big Data Analysis",
+    "code": "28580",
+    "copies": 28,
+    "dept": "CST",
+    "semester": "8th"
+  },
+  {
+    "id": 46,
+    "title": "E-Commerce",
+    "code": "28581",
+    "copies": 55,
+    "dept": "CT",
+    "semester": "6th"
+  },
+  {
+    "id": 47,
+    "title": "Computer Architecture",
+    "code": "28582",
+    "copies": 70,
+    "dept": "CST",
+    "semester": "4th"
+  },
+  {
+    "id": 48,
+    "title": "Theory of Computation",
+    "code": "28583",
+    "copies": 45,
+    "dept": "CST",
+    "semester": "5th"
+  }
+]

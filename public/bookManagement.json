@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Physics -II",
+    "code": "28545",
+    "copies": 100,
+    "dept": "CST",
+    "semester": "7th"
+  },
+  {
+    "title": "Python Programming",
+    "code": "28545",
+    "copies": 150,
+    "dept": "CST",
+    "semester": "6th"
+  },
+  {
+    "title": "Graphics Design-I",
+    "code": "28545",
+    "copies": 48,
+    "dept": "ET",
+    "semester": "5th"
+  },
+  {
+    "title": "Mathematics-III",
+    "code": "28545",
+    "copies": 264,
+    "dept": "ENT",
+    "semester": "3rd"
+  },
+  {
+    "title": "IT Support Services",
+    "code": "28545",
+    "copies": 78,
+    "dept": "RAC",
+    "semester": "4th"
+  },
+  {
+    "title": "Digital Electronics-I",
+    "code": "28545",
+    "copies": 89,
+    "dept": "EMT",
+    "semester": "1st"
+  },
+  {
+    "title": "Database Systems",
+    "code": "28546",
+    "copies": 60,
+    "dept": "CST",
+    "semester": "4th"
+  },
+  {
+    "title": "Software Engineering",
+    "code": "28547",
+    "copies": 45,
+    "dept": "CST",
+    "semester": "5th"
+  },
+  {
+    "title": "Network Security",
+    "code": "28548",
+    "copies": 30,
+    "dept": "CST",
+    "semester": "7th"
+  },
+  {
+    "title": "Artificial Intelligence",
+    "code": "28549",
+    "copies": 25,
+    "dept": "CST",
+    "semester": "8th"
+  },
+  {
+    "title": "Data Communication",
+    "code": "28550",
+    "copies": 200,
+    "dept": "CST",
+    "semester": "3rd"
+  },
+  {
+    "title": "Cyber Security",
+    "code": "28551",
+    "copies": 65,
+    "dept": "CST",
+    "semester": "7th"
+  },
+  {
+    "title": "Java Programming",
+    "code": "28552",
+    "copies": 45,
+    "dept": "CT",
+    "semester": "2nd"
+  },
+  {
+    "title": "Microprocessor",
+    "code": "28553",
+    "copies": 90,
+    "dept": "CST",
+    "semester": "5th"
+  },
+  {
+    "title": "Web Development",
+    "code": "28554",
+    "copies": 110,
+    "dept": "CST",
+    "semester": "6th"
+  }
+]

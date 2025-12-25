@@ -10,32 +10,11 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useLoaderData } from 'react-router-dom';
 
-const ISSUE_DATA = [
-  { id: 1, roll: "651221", sCode: "28545", issueDate: "19 May 25", returnDate: "19 May 25", overdue: "1 Day", fine: 40, status: "Issued" },
-  { id: 2, roll: "651280", sCode: "28545", issueDate: "19 May 25", returnDate: "19 May 25", overdue: "6 Days", fine: 50, status: "Overdue" },
-  { id: 3, roll: "651212", sCode: "28545", issueDate: "19 May 25", returnDate: "19 May 25", overdue: "7 Days", fine: 30, status: "Return" },
-  { id: 4, roll: "651275", sCode: "28545", issueDate: "19 May 25", returnDate: "19 May 25", overdue: "7 Days", fine: 20, status: "Issued" },
-    { id: 5, roll: "651302", sCode: "28545", issueDate: "20 May 25", returnDate: "20 May 25", overdue: "0 Day", fine: 0, status: "Return" },
-  { id: 6, roll: "651310", sCode: "21055", issueDate: "10 May 25", returnDate: "17 May 25", overdue: "2 Days", fine: 10, status: "Overdue" },
-  { id: 7, roll: "651420", sCode: "28545", issueDate: "21 May 25", returnDate: "28 May 25", overdue: "0 Day", fine: 0, status: "Issued" },
-  { id: 8, roll: "651105", sCode: "22011", issueDate: "22 May 25", returnDate: "29 May 25", overdue: "0 Day", fine: 0, status: "Return" },
-  { id: 9, roll: "651099", sCode: "28545", issueDate: "05 May 25", returnDate: "12 May 25", overdue: "15 Days", fine: 150, status: "Overdue" },
-  { id: 10, roll: "651550", sCode: "23044", issueDate: "23 May 25", returnDate: "30 May 25", overdue: "0 Day", fine: 0, status: "Issued" },
-  { id: 11, roll: "651612", sCode: "28545", issueDate: "12 May 25", returnDate: "19 May 25", overdue: "0 Day", fine: 0, status: "Return" },
-  { id: 12, roll: "651123", sCode: "24088", issueDate: "14 May 25", returnDate: "21 May 25", overdue: "4 Days", fine: 40, status: "Overdue" },
-  { id: 13, roll: "651777", sCode: "28545", issueDate: "24 May 25", returnDate: "31 May 25", overdue: "0 Day", fine: 0, status: "Issued" },
-  { id: 14, roll: "651888", sCode: "25066", issueDate: "25 May 25", returnDate: "01 Jun 25", overdue: "0 Day", fine: 0, status: "Return" },
-  { id: 15, roll: "651999", sCode: "28545", issueDate: "01 May 25", returnDate: "08 May 25", overdue: "20 Days", fine: 200, status: "Overdue" },
-  { id: 16, roll: "652001", sCode: "26077", issueDate: "26 May 25", returnDate: "02 Jun 25", overdue: "0 Day", fine: 0, status: "Issued" },
-  { id: 17, roll: "652005", sCode: "28545", issueDate: "27 May 25", returnDate: "03 Jun 25", overdue: "0 Day", fine: 0, status: "Return" },
-  { id: 18, roll: "652110", sCode: "27099", issueDate: "15 May 25", returnDate: "22 May 25", overdue: "5 Days", fine: 50, status: "Overdue" },
-  { id: 19, roll: "652220", sCode: "28545", issueDate: "28 May 25", returnDate: "04 Jun 25", overdue: "0 Day", fine: 0, status: "Issued" },
-  { id: 20, roll: "652330", sCode: "28022", issueDate: "29 May 25", returnDate: "05 Jun 25", overdue: "0 Day", fine: 0, status: "Return" },
-];
-
-const IssueReturn = () => {
-  const [data, setData] = useState(ISSUE_DATA);
+const Return = () => {
+    const returnData = useLoaderData();
+  const [data, setData] = useState(returnData);
   const [searchTerm, setSearchTerm] = useState("");
   
   // State Filtering 
@@ -110,8 +89,8 @@ const IssueReturn = () => {
           </div>
         </div>
 
-        <Button className="bg-[#003f5c] hover:bg-[#002d42] text-white flex items-center gap-2 px-6">
-          Add Issue <Plus className="h-4 w-4" />
+        <Button className="bg-[#003f5c] cursor-pointer hover:bg-[#002d42] text-white flex items-center gap-2 px-6">
+          Add Return <Plus className="h-4 w-4" />
         </Button>
       </div>
 
@@ -198,4 +177,4 @@ const IssueReturn = () => {
   );
 };
 
-export default IssueReturn;
+export default Return;

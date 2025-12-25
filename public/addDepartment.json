@@ -1,0 +1,37 @@
+[
+    {
+    "id": 1,
+    "name": "Computer Science and Technology",
+    "shortName": "CST"
+  },
+  {
+    "id": 2,
+    "name": "Civil Technology",
+    "shortName": "CT"
+  },
+  {
+    "id": 3,
+    "name": "Electrical Technology",
+    "shortName": "ET"
+  },
+  {
+    "id": 4,
+    "name": "Mechanical Technology",
+    "shortName": "MT"
+  },
+  {
+    "id": 5,
+    "name": "Electronics Technology",
+    "shortName": "ENT"
+  },
+  {
+    "id": 6,
+    "name": "Electro-medical Technology",
+    "shortName": "EMT"
+  },
+  {
+    "id": 7,
+    "name": "Refrigeration & Air Conditioning Technology",
+    "shortName": "RAC"
+  }
+]

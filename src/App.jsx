@@ -1,63 +1,13 @@
-import { createBrowserRouter, RouterProvider, Navigate } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
-import { MainLayout } from "./components/Layout/MainLayout";
-import BookManagement from "./pages/BookManagement";
-import IssueReturn from "./pages/IssueReturn";
-import AddDepartment from "./pages/AddDepartment";
-import { AddSemester } from "./pages/AddSemester";
-import StudentManagement from "./pages/StudentManagement";
-import Profile from "./pages/Profile";
+import React from 'react';
 
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <MainLayout />, 
-    children: [
-      {
-        index: true, 
-        element: <Dashboard />,
-      },
-      {
-        path: "/books",
-        element: <BookManagement />,
-      },
-      {
-        path: "/issue",
-        element: <IssueReturn />,
-      },
-      {
-        path: "/return",
-        element: <IssueReturn />,
-      },
-      // {
-      //   path: "/categories",
-      //   element: <Categories />,
-      // },
-      {
-        path: "/categories/department",
-        element: <AddDepartment/>,
-      },
-      {
-        path: "/categories/semester",
-        element: <AddSemester/>,
-      },
-      {
-        path: "/students",
-        element: <StudentManagement/>,
-      },
-      {
-        path: "/profile",
-        element: <Profile />,
-      },
-      {
-        path: "/*", 
-        element: <Navigate to="/" />,
-      },
-    ],
-  },
-]);
 
-export default function App() {
-  return <RouterProvider router={router} />;
-}
+const App = () => {
+  return (
+    <div>
+      
+    </div>
+  );
+};
+
+export default App;
