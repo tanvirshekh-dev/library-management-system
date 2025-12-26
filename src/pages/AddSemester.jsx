@@ -30,7 +30,7 @@ export function AddSemester() {
   const addSemester = useLoaderData();
   const [query, setQuery] = useState("");
 
-  // Modal
+  // Modal add and edit semester
     const [isAddSemesterModalAdded, setIsAddSemesterModalAdded] = useState(false);
     const [isAddSemesterModalEdit, setIsAddSemesterModalEdit] = useState(false);
   
@@ -70,7 +70,6 @@ export function AddSemester() {
         <Table>
           <TableHeader className="bg-[#e9eff3]">
             {" "}
-            {/* Design-accurate header color */}
             <TableRow className="hover:bg-transparent">
               <TableHead className="font-bold text-slate-700 py-4 px-6">
                 Name
@@ -124,7 +123,7 @@ export function AddSemester() {
         <DialogContent className="p-10 min-w-5xl w-full">
           <DialogHeader className="flex flex-row items-center justify-between">
             <DialogTitle className="text-2xl font-bold text-[#003d4d]">
-              Add Department
+              Add Semester
             </DialogTitle>
           </DialogHeader>
 
@@ -165,7 +164,7 @@ export function AddSemester() {
         <DialogContent className="p-10 min-w-5xl w-full">
           <DialogHeader className="flex flex-row items-center justify-between">
             <DialogTitle className="text-2xl font-bold text-[#003d4d]">
-              Add Department
+              Edit Semester
             </DialogTitle>
           </DialogHeader>
 

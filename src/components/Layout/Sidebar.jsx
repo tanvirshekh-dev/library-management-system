@@ -37,12 +37,10 @@ const menuItems = [
 function NavItemWithChildren({ item }) {
   const { pathname } = useLocation();
   
-  // চেক করা হচ্ছে বর্তমান পাথটি কি এই আইটেমের কোনো চাইল্ড পাথের সাথে মিলে কি না
   const isChildActive = item.Children.some((child) => pathname === child.path);
   
   const [isOpen, setIsOpen] = useState(isChildActive);
 
-  // URL পরিবর্তন হলে যদি চাইল্ড অ্যাক্টিভ হয়, ড্রপডাউন অটো খুলে যাবে
   useEffect(() => {
     if (isChildActive) {
       setIsOpen(true);
@@ -55,7 +53,7 @@ function NavItemWithChildren({ item }) {
         onClick={() => setIsOpen(!isOpen)}
         className={`flex items-center justify-between p-3 rounded-lg transition-all duration-200 ${
           isChildActive 
-            ? "bg-[#003f5c] text-white shadow-md" // শুধু তখনই হাইলাইট হবে যখন চাইল্ড অ্যাক্টিভ
+            ? "bg-[#003f5c] text-white shadow-md" 
             : "text-slate-600 hover:bg-slate-50"
         }`}
       >
@@ -70,7 +68,7 @@ function NavItemWithChildren({ item }) {
         />
       </button>
 
-      {/* সাব-মেনু অ্যানিমেশন সহ */}
+      {/* Sub menu*/}
       <div className={`overflow-hidden transition-all duration-300 ${isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}>
         <div className="mt-2 ml-4 p-2 border-l-2 border-slate-100 space-y-1">
           {item.Children.map((child) => (

@@ -1,7 +1,8 @@
 import AddBook from "@/components/dashboard/AddBook";
-import BookList from "@/components/dashboard/BookList";
 import EditBook from "@/components/dashboard/EditBook";
 import { MainLayout } from "@/components/Layout/MainLayout";
+import ChangedPassword from "@/components/Profile/ChangedPassword";
+import EditProfileInfo from "@/components/Profile/EditProfileInfo";
 import AddDepartment from "@/pages/AddDepartment";
 import { AddSemester } from "@/pages/AddSemester";
 import BookManagement from "@/pages/BookManagement";
@@ -9,6 +10,9 @@ import Categories from "@/pages/Categories";
 import Issue from "@/pages/Issue";
 import Profile from "@/pages/Profile";
 import Return from "@/pages/Return";
+import ForgotPassword from "@/components/Profile/ForgotPassword"
+import EmailOtp from "@/components/Profile/EmailOtp"
+import SetNewPassword from "@/components/Profile/SetNewPassword"
 import StudentManagement from "@/pages/StudentManagement";
 import { createBrowserRouter, Navigate } from "react-router-dom";
 
@@ -75,6 +79,26 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
+      },
+      {
+        path: "/profile/edit-profile",
+        element: <EditProfileInfo />,
+      },
+      {
+        path: "/profile/changed-password",
+        element: <ChangedPassword />,
+      },
+      {
+        path: "/profile/forgot-password",
+        element: <ForgotPassword />,
+      },
+      {
+        path: "/profile/email-otp",
+        element: <EmailOtp />,
+      },
+      {
+        path: "/profile/set-new-password",
+        element: <SetNewPassword />,
       },
       {
         path: "/*",

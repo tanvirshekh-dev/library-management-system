@@ -40,7 +40,7 @@ const EditBook = () => {
   const [isModalOpenEdit, setIsModalOpenEdit] = useState(false);
   const [isModalOpenDelete, setIsModalOpenDelete] = useState(false);
 
-  // Table Logic
+  // Table
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
@@ -119,7 +119,7 @@ const EditBook = () => {
         </Table>
       </div>
 
-      {/*  MODAL  */}
+      {/*  MODAL Edit Book */}
       <Dialog open={isModalOpenEdit} onOpenChange={setIsModalOpenEdit}>
         <DialogContent className="p-10 min-w-5xl w-full">
           <DialogHeader className="flex flex-row items-center justify-between">
@@ -195,7 +195,8 @@ const EditBook = () => {
           </form>
         </DialogContent>
       </Dialog>
-      {/* Modal */}
+
+      {/* Modal Delete Book */}
       <Dialog open={isModalOpenDelete} onOpenChange={setIsModalOpenDelete}>
         <DialogContent className="text-center">
           <DialogTitle className="text-red-500">Delete Book</DialogTitle>

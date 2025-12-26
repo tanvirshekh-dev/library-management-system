@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import  AdminImg  from "../assets/self-removebg-preview.png"
+import { Link } from 'react-router-dom';
 
 export default function Profile() {
   const [showPassword, setShowPassword] = useState(false);
@@ -24,7 +25,7 @@ export default function Profile() {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Avatar className="h-20 w-20 rounded-lg">
-              {/* Replace with actual image path */}
+              {/* Replace actual image */}
               <AvatarImage src={AdminImg} alt="Admin" className="object-cover" />
               <AvatarFallback className="rounded-lg bg-slate-100">
                 <User className="h-10 w-10 text-slate-400" />
@@ -36,15 +37,15 @@ export default function Profile() {
             </div>
           </div>
           
-          <Button className="bg-[#003f5c] hover:bg-[#002d42] px-8 py-6 text-lg rounded-lg">
+          <Link to={"/profile/edit-profile"} className="bg-[#003f5c] text-white font-semibold hover:bg-[#002d42] px-8 py-3 text-lg rounded-lg">
             Edit Profile
-          </Button>
+          </Link>
         </div>
       </div>
 
       {/* Form Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10 pt-4">
-        {/* Admin Name - Full Width in Design */}
+        {/* Admin Name */}
         <div className="space-y-3 md:col-span-2">
           <Label className="text-lg font-bold text-[#001f3f]">Admin Name</Label>
           <Input 
@@ -54,7 +55,7 @@ export default function Profile() {
           />
         </div>
 
-        {/* Email Field */}
+        {/* Email */}
         <div className="space-y-3">
           <Label className="text-lg font-bold text-[#001f3f]">Email</Label>
           <Input 
@@ -64,7 +65,7 @@ export default function Profile() {
           />
         </div>
 
-        {/* Contact Number Field */}
+        {/* Contact Number  */}
         <div className="space-y-3">
           <Label className="text-lg font-bold text-[#001f3f]">Contact Number</Label>
           <Input 
@@ -74,7 +75,7 @@ export default function Profile() {
           />
         </div>
 
-        {/* Password Section with Change Button */}
+        {/* Password */}
         <div className="space-y-3 md:col-span-2">
           <Label className="text-lg font-bold text-[#001f3f]">Password</Label>
           <div className="flex gap-4">
@@ -93,11 +94,13 @@ export default function Profile() {
                 {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
               </button>
             </div>
-            <Button className="bg-[#003f5c] hover:bg-[#002d42] h-14 px-12 text-lg rounded-lg">
+            <Link to={"/profile/changed-password"} className="bg-[#003f5c] text-white font-semibold hover:bg-[#002d42] py-3 px-12 text-lg rounded-lg">
               Change
-            </Button>
+            </Link>
           </div>
         </div>
+
+        
       </div>
     </div>
   );

@@ -10,11 +10,6 @@ const Header = () => {
       <h1 className="text-xl font-bold text-gray-800">Library Management System</h1>
       
       <div className="flex items-center gap-6">
-        {/* Notification Icon */}
-        <button className="p-2 text-black hover:bg-gray-100 rounded-lg relative">
-          <Bell />
-          <span className="absolute top-2 right-2.5 w-2 h-2 bg-red-500 rounded-full border-2 border-white"></span>
-        </button>
 
         {/* User Profile */}
         <NavLink 
@@ -27,9 +22,7 @@ const Header = () => {
             }`
           }
         >
-          {/* FIX: We wrap the children in a function. 
-             This gives the inner elements access to 'isActive'.
-          */}
+          
           {({ isActive }) => (
             <>
               <Avatar className="h-10 w-10 border border-white">

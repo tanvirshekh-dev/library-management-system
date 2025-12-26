@@ -30,7 +30,7 @@ export default function AddDepartment() {
   const addDepartment = useLoaderData();
   const [query, setQuery] = useState("");
 
-  // Modal
+  // Modal add and edit department
   const [isAddDepartmentModalAdded, setIsAddDepartmentModalAdded] = useState(false);
   const [isAddDepartmentModalEdit, setIsAddDepartmentModalEdit] = useState(false);
 
@@ -69,7 +69,6 @@ export default function AddDepartment() {
         <Table>
           <TableHeader className="bg-[#e9eff3]">
             {" "}
-            {/* Design-accurate header color */}
             <TableRow className="hover:bg-transparent">
               <TableHead className="font-bold text-slate-700 py-4 px-6">
                 Name
@@ -164,7 +163,7 @@ export default function AddDepartment() {
         <DialogContent className="p-10 min-w-5xl w-full">
           <DialogHeader className="flex flex-row items-center justify-between">
             <DialogTitle className="text-2xl font-bold text-[#003d4d]">
-              Add Department
+              Edit Department
             </DialogTitle>
           </DialogHeader>
 

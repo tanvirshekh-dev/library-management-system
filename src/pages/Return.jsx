@@ -38,13 +38,13 @@ const Return = () => {
   const [data, setData] = useState(returnData);
   const [searchTerm, setSearchTerm] = useState("");
   
- // Modal
+ // Modal add, edit, delete return
   const [isModalOpenAddReturn, setIsModalOpenAddReturn] = useState(false);
   const [isModalOpenEditReturn, setIsModalOpenEditReturn] = useState(false);
   const [isModalOpenDeleteIssueReturn, setIsModalOpenDeleteIssueReturn] = useState(false);
 
 
-  // State Filtering 
+  // Filtering 
   const [statusFilter, setStatusFilter] = useState("All"); 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
@@ -153,7 +153,7 @@ const Return = () => {
             <ChevronLeft className="h-5 w-5" />
           </Button>
 
-          {[...Array(totalPages)].map((_, i) => (
+          {[...Array(totalPages)].map((key, i) => (
             <Button
               key={i + 1}
               variant={currentPage === i + 1 ? "default" : "ghost"}
@@ -175,7 +175,7 @@ const Return = () => {
         </div>
       </div>
 
-        {/* Modal 1*/}
+        {/* Modal Add Return*/}
         <Dialog
           open={isModalOpenAddReturn}
           onOpenChange={setIsModalOpenAddReturn}
@@ -256,7 +256,7 @@ const Return = () => {
           </DialogContent>
         </Dialog>
 
-        {/* Modal 2 */}
+        {/* Modal Edit Return */}
         <Dialog
           open={isModalOpenEditReturn}
           onOpenChange={setIsModalOpenEditReturn}
@@ -337,7 +337,7 @@ const Return = () => {
           </DialogContent>
         </Dialog>
 
-        {/* Modal 3 */}
+        {/* Modal Delete Return */}
         <Dialog open={isModalOpenDeleteIssueReturn} onOpenChange={setIsModalOpenDeleteIssueReturn}>
           <DialogContent className="text-center">
             <DialogTitle className="text-red-500">Delete Book</DialogTitle>

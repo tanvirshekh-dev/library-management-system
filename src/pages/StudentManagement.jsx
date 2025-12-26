@@ -36,7 +36,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { useLoaderData } from "react-router-dom";
 
-// 1. Define how many items to show per page
+// items show per page
 const ITEMS_PER_PAGE = 10;
 
 export default function StudentManagement() {
@@ -45,11 +45,11 @@ export default function StudentManagement() {
   const [statusFilter, setStatusFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
 
-  // Modal
+  // Modal edit, delete student info
   const [editStudentInfo, setEditStudentInfo] = useState(false);
   const [deleteStudentInfo, setDeleteStudentInfo] = useState(false);
 
-  // Filter Logic
+  // Filter 
   const filteredData = useMemo(() => {
     return studentList.filter((item) => {
       const matchesSearch =
@@ -61,25 +61,12 @@ export default function StudentManagement() {
     });
   }, [searchTerm, statusFilter]);
 
-  // 2. Pagination Calculations
+  // Pagination 
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
   const paginatedData = useMemo(() => {
     const start = (currentPage - 1) * ITEMS_PER_PAGE;
     return filteredData.slice(start, start + ITEMS_PER_PAGE);
   }, [filteredData, currentPage]);
-
-  const getStatusBadge = (status) => {
-    const styles = {
-      Regular: "bg-blue-100 text-blue-600 hover:bg-blue-100",
-      Pass: "bg-green-100 text-green-600 hover:bg-green-100",
-      Irregular: "bg-red-100 text-red-600 hover:bg-red-100",
-    };
-    return (
-      <Badge className={`rounded-full px-4 font-normal ${styles[status]}`}>
-        {status}
-      </Badge>
-    );
-  };
 
   return (
     <div className="p-8 space-y-6 bg-white min-h-screen">
@@ -87,36 +74,6 @@ export default function StudentManagement() {
 
       <div className="flex items-center justify-between gap-4">
         <div className="flex items-center gap-3 w-full max-w-2xl">
-          {/* <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="outline"
-                className="flex gap-2 text-slate-500 border-slate-200 px-6"
-              >
-                Filter <SlidersHorizontal className="h-4 w-4" />
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="start" className="w-48">
-              <DropdownMenuLabel>Filter by Status</DropdownMenuLabel>
-              <DropdownMenuSeparator />
-              {["All", "Regular", "Irregular", "Pass"].map((status) => (
-                <DropdownMenuItem
-                  key={status}
-                  onClick={() => {
-                    setStatusFilter(status);
-                    setCurrentPage(1);
-                  }} // Reset to page 1 on filter
-                  className="flex justify-between items-center cursor-pointer"
-                >
-                  {status}
-                  {statusFilter === status && (
-                    <Check className="h-4 w-4 text-[#003f5c]" />
-                  )}
-                </DropdownMenuItem>
-              ))}
-            </DropdownMenuContent>
-          </DropdownMenu> */}
-
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
             <Input
@@ -126,7 +83,7 @@ export default function StudentManagement() {
               onChange={(e) => {
                 setSearchTerm(e.target.value);
                 setCurrentPage(1);
-              }} // Reset to page 1 on search
+              }} 
             />
           </div>
         </div>
@@ -217,9 +174,8 @@ export default function StudentManagement() {
           </TableBody>
         </Table>
 
-        {/* 3. Bottom Right Pagination */}
+        {/* Bottom Pagination */}
         <div className="flex items-center justify-end px-6 py-4 border-t gap-2">
-          {/* Previous Button */}
           <Button
             variant="ghost"
             size="icon"

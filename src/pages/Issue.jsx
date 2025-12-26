@@ -51,12 +51,12 @@ const Issue = () => {
   const [data, setData] = useState(issueData);
   const [searchTerm, setSearchTerm] = useState("");
 
-  // Modal
+  // Modal add, edit, delete issue
   const [isModalOpenAddIssue, setIsModalOpenAddIssue] = useState(false);
   const [isModalOpenEditIssue, setIsModalOpenEditIssue] = useState(false);
   const [isModalOpenDeleteIssue, setIsModalOpenDeleteIssue] = useState(false);
 
-  // State Filtering
+  // Filtering
   const [statusFilter, setStatusFilter] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
@@ -185,7 +185,7 @@ const Issue = () => {
           </TableBody>
         </Table>
 
-        {/* Modal 1*/}
+        {/* Modal Add Issue*/}
         <Dialog
           open={isModalOpenAddIssue}
           onOpenChange={setIsModalOpenAddIssue}
@@ -270,7 +270,7 @@ const Issue = () => {
           </DialogContent>
         </Dialog>
 
-        {/* Modal 2 */}
+        {/* Modal Edit Issue */}
         <Dialog
           open={isModalOpenEditIssue}
           onOpenChange={setIsModalOpenEditIssue}
@@ -355,7 +355,7 @@ const Issue = () => {
           </DialogContent>
         </Dialog>
 
-        {/* Modal 3 */}
+        {/* Modal Delete Issue */}
         <Dialog open={isModalOpenDeleteIssue} onOpenChange={setIsModalOpenDeleteIssue}>
           <DialogContent className="text-center">
             <DialogTitle className="text-red-500">Delete Book</DialogTitle>
@@ -392,7 +392,7 @@ const Issue = () => {
             <ChevronLeft className="h-5 w-5" />
           </Button>
 
-          {[...Array(totalPages)].map((_, i) => (
+          {[...Array(totalPages)].map((key, i) => (
             <Button
               key={i + 1}
               variant={currentPage === i + 1 ? "default" : "ghost"}

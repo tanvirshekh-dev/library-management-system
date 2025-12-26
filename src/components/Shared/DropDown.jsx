@@ -12,19 +12,18 @@ const Dropdown = () => {
         className="w-full flex items-center justify-between bg-[#003f5c] text-white px-4 py-3 rounded-t-xl transition-all"
       >
         <div className="flex items-center gap-3">
-          {/* Custom Icon (Categories icon from image) */}
           <LayoutGrid size={20} />
           <span className="text-lg font-medium">Categories</span>
         </div>
         
-        {/* Animated Arrow Icon */}
+        {/* Arrow Icon */}
         <ChevronDown 
           className={`transition-transform duration-300 ${isOpen ? 'rotate-180' : 'rotate-0'}`} 
           size={22} 
         />
       </button>
 
-      {/* Dropdown Items (Collapsible) */}
+      {/* Dropdown Items */}
       <div 
         className={`overflow-hidden transition-all duration-300 border-x border-b border-slate-100 rounded-b-xl shadow-sm bg-white ${
           isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'

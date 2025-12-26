@@ -37,7 +37,8 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 const AddBook = () => {
   const navigate = useNavigate();
   const books = useLoaderData();
-  // Popup / Modal
+  
+  // Modal
   const [isModalOpenAdd, setIsModalOpenAdd] = useState(false);
   const [isModalOpenDelete, setIsModalOpenDelete] = useState(false);
 
@@ -122,7 +123,7 @@ const AddBook = () => {
         </Table>
       </div>
 
-      {/*  MODAL / Dialog  */}
+      {/*  MODAL Add Book */}
       <Dialog open={isModalOpenAdd} onOpenChange={setIsModalOpenAdd}>
         <DialogContent className="p-10 min-w-5xl w-full">
           <DialogHeader className="flex flex-row items-center justify-between">
@@ -198,7 +199,8 @@ const AddBook = () => {
           </form>
         </DialogContent>
       </Dialog>
-      {/* Modal / Dialog */}
+      
+      {/* Modal Delete Book*/}
       <Dialog open={isModalOpenDelete} onOpenChange={setIsModalOpenDelete}>
         <DialogContent className="text-center">
           <DialogTitle className="text-red-500">Delete Book</DialogTitle>
