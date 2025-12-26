@@ -82,79 +82,16 @@ const Issue = () => {
     currentPage * itemsPerPage
   );
 
-  const getStatusBadge = (status) => {
-    const styles = {
-      Issued: "bg-blue-50 text-blue-500 border-blue-100",
-      Overdue: "bg-red-50 text-red-500 border-red-100",
-      Return: "bg-green-50 text-green-500 border-green-100",
-    };
-    return (
-      <Badge
-        variant="outline"
-        className={`${styles[status]} px-3 py-0.5 rounded-full font-normal`}
-      >
-        {status}
-      </Badge>
-    );
-  };
+
 
   return (
-    <div className="p-6 space-y-4 bg-white min-h-screen">
-      <h2 className="text-xl font-bold text-[#001f3f] mb-4">Issue & Return</h2>
+    <div className="p-6 space-y-4 bg-white min-h-screen text-center">
+      <h2 className="text-xl font-bold text-[#001f3f] text-start mb-4">Issue & Return</h2>
 
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3">
-          {/* Filter Dropdown */}
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button
-                variant="outline"
-                className="flex items-center gap-2 text-slate-600 border-slate-200"
-              >
-                <SlidersHorizontal className="h-4 w-4" />
-                Filter:{" "}
-                <span className="text-[#003f5c] font-semibold">
-                  {statusFilter}
-                </span>
-              </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent align="start" className="w-48">
-              <DropdownMenuItem
-                onClick={() => {
-                  setStatusFilter("All");
-                  setCurrentPage(1);
-                }}
-              >
-                All Books{" "}
-                {statusFilter === "All" && (
-                  <Check className="ml-auto h-4 w-4" />
-                )}
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() => {
-                  setStatusFilter("Issued");
-                  setCurrentPage(1);
-                }}
-              >
-                Issue Books{" "}
-                {statusFilter === "Issued" && (
-                  <Check className="ml-auto h-4 w-4" />
-                )}
-              </DropdownMenuItem>
-              <DropdownMenuItem
-                onClick={() => {
-                  setStatusFilter("Return");
-                  setCurrentPage(1);
-                }}
-              >
-                Return Books{" "}
-                {statusFilter === "Return" && (
-                  <Check className="ml-auto h-4 w-4" />
-                )}
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
 
+          
           <div className="relative w-72">
             <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400" />
             <Input
@@ -179,23 +116,22 @@ const Issue = () => {
 
       <div className="border rounded-lg overflow-hidden shadow-sm space-y-4">
         <Table className={""}>
-          <TableHeader className="bg-[#e9eff3] ">
+          <TableHeader className="bg-[#e9eff3]">
             <TableRow className={"font-semibold text-lg"}>
-              <TableHead className="font-bold text-slate-700 py-4">
+              <TableHead className="font-bold text-slate-700 py-4 text-center">
                 Student Roll
               </TableHead>
-              <TableHead className="font-bold text-slate-700">S-Code</TableHead>
-              <TableHead className="font-bold text-slate-700">
+              <TableHead className="font-bold text-slate-700 text-center">S-Code</TableHead>
+              <TableHead className="font-bold text-slate-700 text-center">
                 Issue Date
               </TableHead>
-              <TableHead className="font-bold text-slate-700">
+              <TableHead className="font-bold text-slate-700 text-center">
                 Return Date
               </TableHead>
-              <TableHead className="font-bold text-slate-700">
-                Overdue
+              <TableHead className="font-bold text-slate-700 text-center">
+                Department
               </TableHead>
-              <TableHead className="font-bold text-slate-700">Fine</TableHead>
-              <TableHead className="font-bold text-slate-700">Status</TableHead>
+              <TableHead className="font-bold text-slate-700 text-center">Semester</TableHead>
               <TableHead className="font-bold text-slate-700 text-center">
                 Action
               </TableHead>
@@ -216,10 +152,9 @@ const Issue = () => {
                     {row.returnDate}
                   </TableCell>
                   <TableCell className="text-slate-600">
-                    {row.overdue}
+                    {row.department}
                   </TableCell>
-                  <TableCell className="text-slate-600">{row.fine}</TableCell>
-                  <TableCell>{getStatusBadge(row.status)}</TableCell>
+                  <TableCell className="text-slate-600">{row.semester}</TableCell>
                   <TableCell>
                     <div className="flex justify-center gap-3">
                       <button
@@ -319,7 +254,7 @@ const Issue = () => {
                 <Button
                   type="button"
                   variant="outline"
-                  onClick={() => setIsModalOpen(false)}
+                  onClick={() => setIsModalOpenAddIssue(false)}
                   className="w-32 border-gray-300 text-orange-500 font-bold hover:text-orange-600 hover:bg-orange-50"
                 >
                   Cancel
@@ -404,7 +339,7 @@ const Issue = () => {
                 <Button
                   type="button"
                   variant="outline"
-                  onClick={() => setIsModalOpen(false)}
+                  onClick={() => setIsModalOpenEditIssue(false)}
                   className="w-32 border-gray-300 text-orange-500 font-bold hover:text-orange-600 hover:bg-orange-50"
                 >
                   Cancel

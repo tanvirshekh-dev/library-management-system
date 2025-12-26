@@ -5,8 +5,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Return" 
     },    
     { 
@@ -15,8 +15,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Overdue" 
     },    
     { 
@@ -25,8 +25,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Return" 
     },    
     { 
@@ -35,8 +35,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Issued" 
     },    
     { 
@@ -45,8 +45,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Return" 
     },
     { 
@@ -55,8 +55,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Issued" 
     },    
     { 
@@ -65,8 +65,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Return" 
     },
     { 
@@ -75,8 +75,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Issued" 
     },    
     { 
@@ -85,8 +85,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Return" 
     },
     { 
@@ -95,8 +95,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Issued" 
     },    
     { 
@@ -105,8 +105,8 @@
         "sCode": "28022", 
         "issueDate": "29 May 25", 
         "returnDate": "05 Jun 25", 
-        "overdue": "0 Day", 
-        "fine": 0, 
+        "department": "computer",
+        "semester": "2nd", 
         "status": "Return" 
     }
 ]
