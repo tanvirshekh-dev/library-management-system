@@ -110,8 +110,6 @@ const AddBook = () => {
                 <TableCell>{book.semester}</TableCell>
                 <TableCell className="text-center">
                   <div className="flex justify-center gap-3">
-                    <Edit className="h-5 w-5 text-gray-400 hover:text-blue-500 cursor-pointer" />
-
                     <Trash2
                       onClick={()=> setIsModalOpenDelete(true)}
                       className="h-5 w-5 text-red-400 hover:text-red-600 cursor-pointer"
@@ -185,7 +183,7 @@ const AddBook = () => {
               <Button
                 type="button"
                 variant="outline"
-                onClick={() => setIsModalOpen(false)}
+                onClick={() => setIsModalOpenAdd(false)}
                 className="w-32 border-gray-300 text-orange-500 font-bold hover:text-orange-600 hover:bg-orange-50"
               >
                 Cancel

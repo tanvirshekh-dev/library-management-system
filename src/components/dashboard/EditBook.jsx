@@ -180,7 +180,7 @@ const EditBook = () => {
               <Button
                 type="button"
                 variant="outline"
-                onClick={() => setIsModalOpen(false)}
+                onClick={() => setIsModalOpenEdit(false)}
                 className="w-32 border-gray-300 text-orange-500 font-bold hover:text-orange-600 hover:bg-orange-50"
               >
                 Cancel
